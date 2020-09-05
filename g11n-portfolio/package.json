@@ -8,8 +8,11 @@
     "start": "next start"
   },
   "dependencies": {
+    "@commitlint/cli": "^9.1.2",
+    "@commitlint/config-conventional": "^9.1.2",
     "next": "9.5.3",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "react-i18next": "^11.7.2"
   }
 }
