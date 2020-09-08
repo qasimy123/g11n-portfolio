@@ -1,8 +1,9 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import { withTranslation } from '../services/i18n'
+import { withTranslation } from '../src/services/i18n'
+import { Hero, About, Blogs, Projects, LanguageChanger } from '../src/components'
 
-function Home({t}) {
+function Home({ t }) {
   return (
     <div className={styles.container}>
       <Head>
@@ -11,28 +12,17 @@ function Home({t}) {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          {t('welcome_title')}
-        </h1>
 
-        <p className={styles.description}>
-          {t('description')}
-        </p>
+        <Hero />
+        <About />
+        <Projects />
+        <Blogs />
 
-        <div className={styles.grid}>
-          <h1>sdds</h1>
-        </div>
       </main>
 
       <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
+        <p>{t('footer_made_by')}</p>
+
       </footer>
     </div>
   )
