@@ -1,5 +1,5 @@
 import App from 'next/app'
-import { appWithTranslation } from '../services/i18n'
+import { appWithTranslation } from '../src/services/i18n'
 
 const MyApp = ({ Component, pageProps }) => <Component {...pageProps} />
 

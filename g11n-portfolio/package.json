@@ -10,6 +10,7 @@
   "dependencies": {
     "@commitlint/cli": "^9.1.2",
     "@commitlint/config-conventional": "^9.1.2",
+    "i18next": "^19.7.0",
     "next": "9.5.3",
     "next-i18next": "^6.0.2",
     "react": "16.13.1",
