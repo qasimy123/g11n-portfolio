@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import { withTranslation } from '../src/services/i18n'
-import { Hero, About, Blogs, Projects, LanguageChanger } from '../src/components'
+import { Hero, About, Blogs, Projects } from '../src/components'
 
 function Home({ t }) {
   return (
