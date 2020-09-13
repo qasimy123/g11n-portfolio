@@ -1,5 +1,5 @@
 {
-  "description": "I am a Computing Science student at the University of Alberta, and I love reading and writing about tech. And I like building with cool things...",
+  "description": "I am a Computing Science student at the University of Alberta, and I love reading and writing about tech.",
   "language_changer_button": "Change Region",
   "locales": {
     "en_CA": "English Canada",
@@ -7,5 +7,5 @@
     "fr_CA": "French Canada",
     "ur_PK": "Urdu Pakistan"
   },
-  "welcome_title": "Hello, my name is Qdssddsasim!"
+  "welcome_title": "Hello, my name is $t(common:first_name)!"
 }

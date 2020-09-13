@@ -1,0 +1,5 @@
+{
+  "first_name": "قاسم",
+  "full_name": "$t(common:last_name) $t(common:first_name) ",
+  "last_name": "خواجہ"
+}
