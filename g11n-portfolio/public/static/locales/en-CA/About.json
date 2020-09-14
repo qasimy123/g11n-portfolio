@@ -1,4 +1,10 @@
 {
+  "about_favourite_technologies": "Here are some technologies I am into at the moment",
+  "about_favourite_technologies_list": [
+    "Reactjs",
+    "Nodejs",
+    "GraphQL"
+  ],
   "about_title": "About",
   "anothet": "Test"
 }

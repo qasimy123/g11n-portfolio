@@ -1,3 +1,41 @@
 {
+  "projects_list": [
+    {
+      "demo_url": "demo.com",
+      "description": "dfsdff",
+      "github_url": "github.com",
+      "name": "dsd",
+      "preview_path": "preview/path",
+      "technologies_used": [
+        "asd",
+        "git",
+        "f"
+      ]
+    },
+    {
+      "demo_url": "demo.com",
+      "description": "dfsdff",
+      "github_url": "github.com",
+      "name": "dsd",
+      "preview_path": "preview/path",
+      "technologies_used": [
+        "asd",
+        "git",
+        "f"
+      ]
+    },
+    {
+      "demo_url": "demo.com",
+      "description": "dfsdff",
+      "github_url": "github.com",
+      "name": "dsd",
+      "preview_path": "preview/path",
+      "technologies_used": [
+        "asd",
+        "git",
+        "f"
+      ]
+    }
+  ],
   "projects_title": "Projects"
 }
