@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "yarn syncTranslations && yarn saveMissing && next dev",
+    "dev": "yarn syncTranslations && yarn saveMissing && next dev -p 8080",
     "build": "yarn syncTranslations && yarn saveMissing && next build",
     "start": "next start",
     "syncTranslations": "cd ./public/static/locales && dotenv -c .env.local locize sync --path ./public/static/locales",
