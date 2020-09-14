@@ -3,7 +3,7 @@ import Blogs from "./Blogs";
 import Hero from "./Hero";
 import LanguageChanger from "./LanguageChanger";
 import Projects from "./Projects";
-import { ProjectsList } from "./Lists";
+import { ProjectsList, BlogsList } from "./Lists";
 
 module.exports = {
   About,
@@ -12,4 +12,5 @@ module.exports = {
   LanguageChanger,
   Projects,
   ProjectsList,
+  BlogsList,
 };

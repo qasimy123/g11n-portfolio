@@ -3,7 +3,7 @@ import styles from "../styles/Home.module.css";
 import { withTranslation } from "../src/services/i18n";
 import { Hero, About, Blogs, Projects } from "../src/components";
 
-function Home({ t }) {
+function Home({ t, MediumRssFeed }) {
   return (
     <div className={styles.container}>
       <Head>
@@ -15,7 +15,7 @@ function Home({ t }) {
         <Hero />
         <About />
         <Projects />
-        <Blogs />
+        <Blogs MediumRssFeed={MediumRssFeed} />
       </main>
 
       <footer className={styles.footer}>
@@ -24,5 +24,12 @@ function Home({ t }) {
     </div>
   );
 }
-
+Home.getInitialProps = async () => {
+  const rssToJsonApi = `https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40q.invisible`;
+  const res = await fetch(rssToJsonApi);
+  const MediumRssFeed = await res.json();
+  return {
+    MediumRssFeed,
+  };
+};
 export default withTranslation("home")(Home);
