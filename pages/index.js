@@ -1,7 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import { withTranslation } from "../src/services/i18n";
-import { Hero, About, Blogs, Projects } from "../src/components";
+import { Hero, About, Blogs, Projects, Menu } from "../src/components";
 
 function Home({ t, MediumRssFeed }) {
   return (
@@ -10,7 +10,7 @@ function Home({ t, MediumRssFeed }) {
         <title>{t("app_title")}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      <Menu />
       <main className={styles.main}>
         <Hero />
         <About />
