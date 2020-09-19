@@ -17,23 +17,40 @@ const LanguageChanger = () => {
   };
 
   return (
-    <div>
-      <form onSubmit={(e) => changeLocale(e)}>
-        <p>{t("common:full_name")}</p>
-        <select
-          value={selectedLocale}
-          onChange={(e) => {
-            setSelectedLocale(e.target.value);
-          }}
+    <>
+      <div className={"language-changer"}>
+        <form
+          className={"language-changer-form"}
+          onSubmit={(e) => changeLocale(e)}
         >
-          <option value="en-CA">{t("locales.en_CA")}</option>
-          <option value="en-PK">{t("locales.en_PK")}</option>
-          <option value="fr-CA">{t("locales.fr_CA")}</option>
-          <option value="ur-PK">{t("locales.ur_PK")}</option>
-        </select>
-        <button type="submit">{t("language_changer_button")}</button>
-      </form>
-    </div>
+          <select
+            value={selectedLocale}
+            onChange={(e) => {
+              setSelectedLocale(e.target.value);
+            }}
+          >
+            <option value="en-CA">{t("locales.en_CA")}</option>
+            <option value="fr-CA">{t("locales.fr_CA")}</option>
+            <option value="en-PK">{t("locales.en_PK")}</option>
+            <option value="ur-PK">{t("locales.ur_PK")}</option>
+          </select>
+          <button type="submit">{t("language_changer_button")}</button>
+        </form>
+      </div>
+      <style jsx>{`
+        .language-changer {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+
+        .language-changer-form {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+      `}</style>
+    </>
   );
 };
 

@@ -16,17 +16,43 @@ const ProjectCard = ({ project }) => {
 
   const { t } = useTranslation("Projects");
   return (
-    <div>
-      <h3>{name}</h3>
-      <p>{description}</p>
-      <a href={demo_url}>{t("demo")}</a>
-      <a href={github_url}>{t("github")}</a>
-      <ul>
-        {technologies_used.map((tech) => (
-          <li>{tech}</li>
-        ))}
-      </ul>
-    </div>
+    <>
+      <div className={"project-card"}>
+        <h3>{name}</h3>
+        <div className={"project-card-content"}>
+          <a href="https://placeholder.com">
+            <img src="https://via.placeholder.com/150" />
+          </a>
+          <div>
+            <p>{description}</p>
+            <ul>
+              {technologies_used.map((tech) => (
+                <li>{tech}</li>
+              ))}
+            </ul>
+            <div>
+              <a href={demo_url}>{t("demo")}</a>{" "}
+              <a href={github_url}>{t("github")}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <style jsx>{`
+        .project-card {
+          display: flex;
+          background: white;
+          flex-direction: column;
+          padding: 1em;
+          margin-top: 1em;
+        }
+        .project-card-content {
+          display: flex;
+          background: pink;
+          justify-content: space-between;
+          padding: 1em;
+        }
+      `}</style>
+    </>
   );
 };
 
@@ -34,9 +60,30 @@ const BlogCard = ({ blog }) => {
   const { title, pubDate, link, thumbnail, description, categories } = blog;
 
   return (
-    <div>
-      <h3>{title}</h3>
-    </div>
+    <>
+      <div className={"blog-card"}>
+        <h3>{title}</h3>
+        <a href="https://placeholder.com">
+          <img width="150" src={thumbnail} />
+        </a>
+        <p>{pubDate}</p>
+        <ul>
+          {categories.map((tech) => (
+            <li>{tech}</li>
+          ))}
+        </ul>
+        <div></div>
+      </div>
+      <style jsx>{`
+        .blog-card {
+          display: flex;
+          background: white;
+          flex-direction: column;
+          padding: 1em;
+          margin-top: 1em;
+        }
+      `}</style>
+    </>
   );
 };
 
