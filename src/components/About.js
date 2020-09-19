@@ -1,7 +1,8 @@
 import { withTranslation } from "../services/i18n";
+import Section from "./Section";
 
 const About = ({ t }) => (
-  <div>
+  <Section>
     <h1>{t("about_title")}</h1>
     <p>{t("about_paragraph")}</p>
 
@@ -9,11 +10,11 @@ const About = ({ t }) => (
     <ul>
       {t("about_favourite_technologies_list", { returnObjects: true }).map(
         (item) => (
-          <p>{item}</p>
+          <li>{item}</li>
         )
       )}
     </ul>
-  </div>
+  </Section>
 );
 
 export default withTranslation("About")(About);

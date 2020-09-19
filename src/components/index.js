@@ -4,6 +4,8 @@ import Hero from "./Hero";
 import LanguageChanger from "./LanguageChanger";
 import Projects from "./Projects";
 import { ProjectsList, BlogsList } from "./Lists";
+import Section from "./Section";
+import Menu from "./Menu";
 
 module.exports = {
   About,
@@ -13,4 +15,6 @@ module.exports = {
   Projects,
   ProjectsList,
   BlogsList,
+  Section,
+  Menu,
 };
