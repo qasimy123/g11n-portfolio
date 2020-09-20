@@ -22,6 +22,7 @@ const theme = {
       primaryColor: "#65b891",
       secondaryColor: "#130303",
       border: "#3c7a89",
+      paper: "#65b891",
       warning: "#fff3cd",
       success: "#d4edda",
     },

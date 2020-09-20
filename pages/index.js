@@ -2,7 +2,8 @@ import Head from "next/head";
 import { withTranslation } from "../src/services/i18n";
 import { Hero, About, Blogs, Projects, Menu } from "../src/components";
 import theme from "../styles/theme";
-function Home({ t, MediumRssFeed }) {
+function Home({ t, MediumRssFeed, i18n }) {
+  const currTheme = theme[i18n.language.split("-").slice(-1)[0].toLowerCase()];
   return (
     <>
       <div className={"container"}>
@@ -29,7 +30,7 @@ function Home({ t, MediumRssFeed }) {
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          background-color: ${theme.ca.colors.background};
+          background-color: ${currTheme.colors.background};
         }
 
         .main {
@@ -44,7 +45,7 @@ function Home({ t, MediumRssFeed }) {
         .footer {
           width: 100%;
           height: 100px;
-          background: ${theme.ca.colors.secondaryColor};
+          background: ${currTheme.colors.secondaryColor};
           display: flex;
           justify-content: center;
           align-items: center;
@@ -78,7 +79,7 @@ function Home({ t, MediumRssFeed }) {
           border-radius: 0.5em;
           background: white;
           
-          color: ${theme.ca.colors.secondaryColor};
+          color: ${currTheme.colors.secondaryColor};
         }
 
         .card h3 {

@@ -26,7 +26,8 @@ const ProjectCard = ({ project }) => {
     technologies_used,
   } = project;
 
-  const { t } = useTranslation("Projects");
+  const { t, i18n } = useTranslation("Projects");
+  const currTheme = theme[i18n.language.split("-").slice(-1)[0].toLowerCase()];
   return (
     <>
       <div className={"card project-card "}>
@@ -67,7 +68,7 @@ const ProjectCard = ({ project }) => {
         p,
         a,
         ul {
-          color: ${theme.ca.colors.text};
+          color: ${currTheme.colors.text};
         }
         .project-card-content {
           display: flex;
@@ -83,7 +84,7 @@ const ProjectCard = ({ project }) => {
           flex-direction: column;
           width: 60%;
           height: fit-content;
-          background: ${theme.ca.colors.paper};
+          background: ${currTheme.colors.paper};
         }
       `}</style>
     </>
