@@ -1,14 +1,16 @@
 import LanguageChanger from "./LanguageChanger";
+import { useTranslation } from "../services/i18n";
 
-const Menu = ({ children }) => {
+const Menu = ({}) => {
+  const { t, i18n } = useTranslation();
   return (
     <>
       <div className={"section"}>
-        <h1>Qasim</h1>
+        <h1>{t("first_name")}</h1>
         <ul className={"links"}>
-          <a>Linkedin</a>
-          <a>Twitter</a>
-          <a>Medium</a>
+          {t("socials", { returnObjects: true }).map((social) => (
+            <a href={social.url}>{social.site}</a>
+          ))}
         </ul>
 
         <LanguageChanger />
@@ -17,13 +19,11 @@ const Menu = ({ children }) => {
         .section {
           justify-content: space-between;
           display: flex;
-          background: blue;
           width: 100%;
-          padding: 1em;
+          padding: 2em;
         }
         .links {
           display: flex;
-          background: pink;
           padding: 1em;
         }
         .links a {

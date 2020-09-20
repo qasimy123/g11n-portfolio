@@ -1,3 +1,4 @@
+import theme from "../../styles/theme";
 const Section = ({ children }) => {
   return (
     <>
@@ -6,9 +7,9 @@ const Section = ({ children }) => {
         .section {
           display: flex;
           flex-direction: column;
-          background: grey;
           width: 80%;
           padding: 1em;
+          color: ${theme.ca.colors.text};
         }
       `}</style>
     </>
