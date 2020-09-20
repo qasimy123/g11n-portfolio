@@ -1,7 +1,8 @@
 import theme from "../../styles/theme";
-import { i18n } from "../services/i18n";
+import { useTranslation } from "../services/i18n";
 
 const Section = ({ children }) => {
+  const { i18n } = useTranslation("Projects");
   const currTheme = theme[i18n.language.split("-").slice(-1)[0].toLowerCase()];
   return (
     <>
