@@ -32,10 +32,7 @@ const ProjectCard = ({ project }) => {
       <div className={"card project-card "}>
         <h3>{name}</h3>
         <div className={"project-card-content"}>
-          <img
-            className={"project-preview"}
-            src="https://via.placeholder.com/400"
-          />
+          <img className={"project-preview"} src={preview_path} />
           <div className={"project-card-text"}>
             <p>{description}</p>
             <ul className={"project-card-technologies"}>
@@ -45,7 +42,7 @@ const ProjectCard = ({ project }) => {
             </ul>
             <div className="project-links">
               <a href={demo_url}>{t("demo")}</a>{" "}
-              <a href={github_url}>{t("github")}</a>
+              {github_url && <a href={github_url}>{t("github")}</a>}
             </div>
           </div>
         </div>
@@ -60,6 +57,7 @@ const ProjectCard = ({ project }) => {
         }
         .project-preview {
           border-radius: 0.5em;
+          width: 640px;
         }
         .project-card-technologies,
         .project-links {
@@ -81,7 +79,7 @@ const ProjectCard = ({ project }) => {
           display: flex;
           padding: 1em;
           margin-left: -2em;
-          margin-top: 1em;
+          margin-top: 2em;
           flex-direction: column;
           width: 60%;
           height: fit-content;
