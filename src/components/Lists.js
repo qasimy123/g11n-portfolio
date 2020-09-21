@@ -27,14 +27,18 @@ const ProjectCard = ({ project }) => {
   } = project;
 
   const { t, i18n } = useTranslation("Projects");
-  const currTheme = theme[i18n.language.split("-").slice(-1)[0].toLowerCase()];
+  const [language, region] = i18n.language
+    .split("-")
+    .map((item) => item.toLowerCase());
+  const currTheme = theme[region];
+  const dir = i18n.dir(language);
   return (
     <>
       <div className={"card project-card "}>
         <h3>{name}</h3>
         <div className={"project-card-content"}>
           <img className={"project-preview"} src={preview_path} />
-          <div className={"project-card-text"}>
+          <div dir={dir} className={"project-card-text"}>
             <p>{description}</p>
             <ul className={"project-card-technologies"}>
               {technologies_used.map((tech) => (
@@ -75,7 +79,6 @@ const ProjectCard = ({ project }) => {
         }
         .project-card-text {
           box-shadow: -8px 10px 44px -21px rgba(0, 0, 0, 0.59);
-
           border-radius: 0.5em;
           display: flex;
           padding: 1em;
@@ -85,6 +88,11 @@ const ProjectCard = ({ project }) => {
           width: 60%;
           height: fit-content;
           background: ${currTheme.colors.paper};
+        }
+
+        .project-card-text[dir="rtl"] {
+          box-shadow: 8px 10px 44px -21px rgba(0, 0, 0, 0.59);
+          margin-right: -2em;
         }
       `}</style>
     </>

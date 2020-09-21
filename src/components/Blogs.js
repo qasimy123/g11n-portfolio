@@ -2,13 +2,16 @@ import { withTranslation } from "../services/i18n";
 import { BlogsList } from "./Lists";
 import Section from "./Section";
 
-const Blogs = ({ t, MediumRssFeed }) => {
+const Blogs = ({ t, MediumRssFeed, i18n }) => {
+  const [language] = i18n.language.split("-").map((item) => item.toLowerCase());
+  const dir = i18n.dir(language);
   return (
     <>
       <Section>
         <h1>{t("blogs_title")}</h1>
         {MediumRssFeed && <BlogsList blogsList={MediumRssFeed.items} />}
         <img
+          dir={dir}
           className={"bitmoji"}
           src={`https://sdk.bitmoji.com/render/panel/ded21d24-cb38-4e67-862b-4fcb8201f661-3f3fdbec-d78d-441b-8530-a6c5f8c15014-v1.png?transparent=1&palette=1`}
         ></img>
@@ -21,6 +24,11 @@ const Blogs = ({ t, MediumRssFeed }) => {
             bottom: -1;
             right: 0;
             transform: scaleX(-1);
+          }
+
+          .bitmoji[dir="rtl"] {
+            left: 0;
+            transform: scaleX(1);
           }
         `}
       </style>

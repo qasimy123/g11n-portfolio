@@ -3,7 +3,11 @@ import { withTranslation } from "../src/services/i18n";
 import { Hero, About, Blogs, Projects, Menu } from "../src/components";
 import theme from "../styles/theme";
 function Home({ t, MediumRssFeed, i18n }) {
-  const currTheme = theme[i18n.language.split("-").slice(-1)[0].toLowerCase()];
+  const [language, region] = i18n.language
+    .split("-")
+    .map((item) => item.toLowerCase());
+  const currTheme = theme[region];
+  const dir = i18n.dir(language);
   return (
     <>
       <div className={"container"}>
@@ -25,6 +29,7 @@ function Home({ t, MediumRssFeed, i18n }) {
       </div>
       <style jsx global>{`
         .container {
+          direction: ${dir};
           min-height: 100vh;
           display: flex;
           flex-direction: column;

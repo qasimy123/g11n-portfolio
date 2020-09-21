@@ -27,10 +27,8 @@ const Menu = ({}) => {
           padding: 1em;
         }
         .links a {
-          margin-left: 1em;
-        }
-        .links a:nth-of-type(1) {
-          margin-left: 0;
+          margin-left: 0.5em;
+          margin-right: 0.5em;
         }
       `}</style>
     </>
