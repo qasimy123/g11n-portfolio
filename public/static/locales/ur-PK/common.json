@@ -1,5 +1,19 @@
 {
   "first_name": "قاسم",
   "full_name": "$t(common:last_name) $t(common:first_name) ",
-  "last_name": "خواجہ"
+  "last_name": "خواجہ",
+  "socials": [
+    {
+      "site": "لنکڈین",
+      "url": "https://ca.linkedin.com/in/qkhawaja"
+    },
+    {
+      "site": "میڈیم",
+      "url": "https://medium.com/@q.invisible"
+    },
+    {
+      "site": "گٹ ہب",
+      "url": "https://github.com/qasimy123"
+    }
+  ]
 }

@@ -1,3 +1,40 @@
 {
+  "demo": "Démo",
+  "github": "Github",
+  "projects_list": [
+    {
+      "demo_url": "https://covidrace.news/",
+      "description": "Contribution à l'interface utilisateur d'une application Web permettant de suivre les progrès du développement du vaccin Covid-19.",
+      "name": "Application CovidRace",
+      "preview_path": "/static/previews/covidraceapp.png",
+      "technologies_used": [
+        "React.js (Next.js)",
+        "Styled JSX",
+        "Node.js"
+      ]
+    },
+    {
+      "demo_url": "https://scavenger-hunt-53d39.firebaseapp.com/",
+      "description": "Entièrement développé une application Web de récupération de photos avec la possibilité de créer des équipes.\nIl a été testé avec environ 100 étudiants, en utilisant l'application et en téléchargeant des photos simultanément. L'application a montré le score de chaque équipe sur un tableau des leaders avec un flux de photos en direct.",
+      "github_url": "https://github.com/qasimy123/scavengerhunt",
+      "name": "Application de chasse au trésor photo",
+      "preview_path": "/static/previews/scavengerhunt.png",
+      "technologies_used": [
+        "React.js",
+        "Firebase"
+      ]
+    },
+    {
+      "demo_url": "https://qasimy123.github.io/react-game",
+      "description": "Développer un Dungeon Crawler de type voyou. J'ai également créé la musique et presque tout le pixel art.",
+      "github_url": "https://github.com/qasimy123/react-game",
+      "name": "Donjon des voleurs",
+      "preview_path": "/static/previews/dungeoncrawler.png",
+      "technologies_used": [
+        "React.js",
+        "Redux"
+      ]
+    }
+  ],
   "projects_title": "Projects"
 }

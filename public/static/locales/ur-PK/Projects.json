@@ -1,13 +1,39 @@
 {
+  "demo": "ڈیمو",
+  "github": "گیتوب",
   "projects_list": [
     {
-      "description": "کویوڈ - 19 ویکسین کی نشوونما کی پیشرفت پر نظر رکھنے کے لئے ویب ایپ کے لئے UI میں تعاون کیا۔"
+      "demo_url": "https://covidrace.news/",
+      "description": "کویوڈ - 19 ویکسین کی نشوونما کی پیشرفت پر نظر رکھنے کے لئے ویب ایپ کے لئے UI میں تعاون کیا۔",
+      "name": "کوویڈریس ایپ",
+      "preview_path": "/static/previews/covidraceapp.png",
+      "technologies_used": [
+        "React.js (Next.js)",
+        "اسٹائلڈ جے ایس ایکس",
+        "نوڈ.جس"
+      ]
     },
     {
-      "description": "ٹیمیں بنانے کی صلاحیت کے ساتھ مکمل طور پر فوٹو اسکینجر ویب ایپ تیار کی۔\nاس کا اطلاق 100 کے قریب طلباء کے ساتھ کیا گیا ، جس میں ایپ کا استعمال کیا گیا اور بیک وقت فوٹو اپ لوڈ کیا گیا۔ ایپ نے ہر ٹیم کا اسکور ایک براہ راست تصویر والے فیڈ کے ساتھ لیڈر بورڈ پر دکھایا۔"
+      "demo_url": "https://scavenger-hunt-53d39.firebaseapp.com/",
+      "description": "ٹیمیں بنانے کی صلاحیت کے ساتھ مکمل طور پر فوٹو اسکینجر ویب ایپ تیار کی۔\nاس کا اطلاق 100 کے قریب طلباء کے ساتھ کیا گیا ، جس میں ایپ کا استعمال کیا گیا اور بیک وقت فوٹو اپ لوڈ کیا گیا۔ ایپ نے ہر ٹیم کا اسکور ایک براہ راست تصویر والے فیڈ کے ساتھ لیڈر بورڈ پر دکھایا۔",
+      "github_url": "https://github.com/qasimy123/scavengerhunt",
+      "name": "فوٹو اسکینجر ہنٹ ایپ",
+      "preview_path": "/static/previews/scavengerhunt.png",
+      "technologies_used": [
+        "React.js",
+        "فائر بیس"
+      ]
     },
     {
-      "description": "بدمعاش کی طرح کا کلہاڑی کرالر تیار کیا۔ میں نے میوزک اور تقریبا almost تمام پکسل آرٹ کو بھی تخلیق کیا۔"
+      "demo_url": "https://qasimy123.github.io/react-game",
+      "description": "بدمعاش کی طرح کا کلہاڑی کرالر تیار کیا۔ میں نے میوزک اور تقریبا almost تمام پکسل آرٹ کو بھی تخلیق کیا۔",
+      "github_url": "https://github.com/qasimy123/react-game",
+      "name": "چوروں کی تہھانے",
+      "preview_path": "/static/previews/dungeoncrawler.png",
+      "technologies_used": [
+        "React.js",
+        "ریڈوکس"
+      ]
     }
   ],
   "projects_title": "Projects"
