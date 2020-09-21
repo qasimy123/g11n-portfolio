@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@commitlint/cli": "^11.0.0",
-    "@commitlint/config-conventional": "^9.1.2",
+    "@commitlint/config-conventional": "^11.0.0",
     "dotenv-cli": "^4.0.0",
     "i18next": "^19.7.0",
     "locize-cli": "^7.6.6",
