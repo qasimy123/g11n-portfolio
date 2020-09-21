@@ -30,6 +30,18 @@ const Menu = ({}) => {
           margin-left: 0.5em;
           margin-right: 0.5em;
         }
+        @media screen and (max-width: 600px) {
+          .section {
+            flex-direction: column;
+            justify-content: center;
+          }
+          .section h1 {
+            text-align: center;
+          }
+          .links {
+            justify-content: center;
+          }
+        }
       `}</style>
     </>
   );

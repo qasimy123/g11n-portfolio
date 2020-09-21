@@ -38,6 +38,11 @@ const Hero = ({ t }) => (
         line-height: 1.5;
         font-size: 1.5rem;
       }
+      @media screen and (max-width: 600px) {
+        .title {
+          font-size: 4em;
+        }
+      }
     `}</style>
   </div>
 );

@@ -15,6 +15,11 @@ const Section = ({ children }) => {
           padding: 1em;
           color: ${currTheme.colors.text};
         }
+        @media screen and (max-width: 600px) {
+          .section {
+            text-align: center;
+          }
+        }
       `}</style>
     </>
   );

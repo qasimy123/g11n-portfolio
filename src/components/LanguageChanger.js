@@ -1,7 +1,14 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "../services/i18n";
+import theme from "../../styles/theme";
+
 const LanguageChanger = () => {
   const { t, i18n } = useTranslation("Hero");
+  const [language, region] = i18n.language
+    .split("-")
+    .map((item) => item.toLowerCase());
+  const currTheme = theme[region];
+  const dir = i18n.dir(language);
   const [selectedLocale, setSelectedLocale] = useState();
 
   useEffect(() => {
@@ -19,6 +26,7 @@ const LanguageChanger = () => {
     <>
       <div className={"language-changer"}>
         <select
+          dir={dir}
           className="select-language"
           value={selectedLocale}
           onChange={(e) => {
@@ -44,7 +52,7 @@ const LanguageChanger = () => {
           font-size: 16px;
           font-family: sans-serif;
           font-weight: 700;
-          color: #444;
+          color: ${currTheme.colors.secondaryColor};
           line-height: 1.3;
           padding: 0.6em 1.4em 0.5em 0.8em;
           width: 100%;
@@ -61,10 +69,22 @@ const LanguageChanger = () => {
           outline: none;
         }
 
-        *[dir="rtl"] .select-language,
-        :root:lang(ar) .select-language,
-        :root:lang(iw) .select-language {
-          background-position: left 0.7em top 50%, 0 0;
+        @media screen and (max-width: 600px) {
+          .select-language {
+            width: 60%;
+            text-align-last: center;
+          }
+          .language-changer {
+            justify-content: center;
+            align-items: center;
+          }
+        }
+
+        .select-language:hover {
+          box-shadow: inset 0px 5px 16px -7px rgba(0, 0, 0, 0.57);
+          cursor: pointer;
+        }
+        .select-language[dir="rtl"] {
           padding: 0.6em 0.8em 0.5em 1.4em;
         }
       `}</style>

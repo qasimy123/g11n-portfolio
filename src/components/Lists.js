@@ -94,6 +94,24 @@ const ProjectCard = ({ project }) => {
           box-shadow: 8px 10px 44px -21px rgba(0, 0, 0, 0.59);
           margin-right: -2em;
         }
+
+        @media screen and (max-width: 1400px) {
+          .project-preview {
+            width: 100%;
+          }
+          .project-card-content {
+            flex-direction: column;
+          }
+          .project-card-text {
+            margin-left: 0em;
+            width: 100%;
+          }
+        }
+        @media screen and (max-width: 600px) {
+          .project-card h3 {
+            text-align: center;
+          }
+        }
       `}</style>
     </>
   );
@@ -110,17 +128,19 @@ const BlogCard = ({ blog }) => {
   const { i18n } = useTranslation("Blogs");
   return (
     <>
-      <a href={link}>
+      <a class={"blog-containter"} href={link}>
         <div className={"blog-card card"}>
           <h3>{title}</h3>
           <img className={"blog-thumbnail"} src={thumbnail} />
           <p className={"blog-date"}>
             {new Date(pubDate).toLocaleDateString(i18n.language, options)}
           </p>
-          <div></div>
         </div>
       </a>
       <style jsx>{`
+        .blog-containter {
+          display: flex;
+        }
         .blog-card {
           margin: 1em;
           display: flex;
@@ -129,6 +149,7 @@ const BlogCard = ({ blog }) => {
           padding: 1em;
           margin-top: 1em;
           width: fit-content;
+          box-shadow: -8px 10px 44px -21px rgba(0, 0, 0, 0.59);
         }
         .blog-date {
           font-size: 1em;
@@ -136,11 +157,21 @@ const BlogCard = ({ blog }) => {
         }
         .blog-card h3 {
           white-space: normal !important;
-          width: 300px !important;
+          width: 300px;
           font-size: 1.5em;
         }
         .blog-thumbnail {
           width: 300px;
+        }
+
+        @media screen and (max-width: 1200px) {
+          .blog-thumbnail {
+            width: 100%;
+          }
+          .blog-card h3 {
+            white-space: normal !important;
+            width: 100%;
+          }
         }
       `}</style>
     </>
