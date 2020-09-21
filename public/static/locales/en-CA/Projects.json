@@ -7,7 +7,11 @@
       "description": "Contributed to the UI for a web app to track the progress of the Covid-19 vaccine development.",
       "name": "CovidRace App",
       "preview_path": "/static/previews/covidraceapp.png",
-      "technologies_used": ["React (Next.js)", "Styled JSX", "Node.js"]
+      "technologies_used": [
+        "React.js (Next.js)",
+        "Styled JSX",
+        "Node.js"
+      ]
     },
     {
       "demo_url": "https://scavenger-hunt-53d39.firebaseapp.com/",
@@ -15,7 +19,10 @@
       "github_url": "https://github.com/qasimy123/scavengerhunt",
       "name": "Photo Scavenger Hunt App",
       "preview_path": "/static/previews/scavengerhunt.png",
-      "technologies_used": ["React.js", "Firebase"]
+      "technologies_used": [
+        "React.js",
+        "Firebase"
+      ]
     },
     {
       "demo_url": "https://qasimy123.github.io/react-game",
@@ -23,7 +30,10 @@
       "github_url": "https://github.com/qasimy123/react-game",
       "name": "Dungeon of Thieves",
       "preview_path": "/static/previews/dungeoncrawler.png",
-      "technologies_used": ["React.js", "Redux"]
+      "technologies_used": [
+        "React.js",
+        "Redux"
+      ]
     }
   ],
   "projects_title": "Projects"
