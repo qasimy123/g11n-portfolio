@@ -13,6 +13,24 @@ function Home({ t, MediumRssFeed, i18n }) {
         <Head>
           <title>{t("app_title")}</title>
           <link rel="icon" href="/favicon.ico" />
+          <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/apple-touch-icon.png"
+          />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/favicon-32x32.png"
+          />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/favicon-16x16.png"
+          />
+          <link rel="manifest" href="/site.webmanifest" />
         </Head>
         <Menu />
         <main className={"main"}>
@@ -116,7 +134,9 @@ function Home({ t, MediumRssFeed, i18n }) {
   );
 }
 Home.getInitialProps = async () => {
-  const rssToJsonApi = `https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40q.invisible`;
+  const username = "@q.invisible";
+  const rssFeedUrl = `https://medium.com/feed/${username}`;
+  const rssToJsonApi = `https://api.rss2json.com/v1/api.json?rss_url=${rssFeedUrl}`;
   const res = await fetch(rssToJsonApi);
   const MediumRssFeed = await res.json();
   return {
