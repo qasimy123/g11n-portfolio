@@ -152,7 +152,8 @@ const BlogCard = ({ blog }) => {
           <h3>{title}</h3>
           <img className={"blog-thumbnail"} src={thumbnail} />
           <p className={"blog-date"}>
-            {new Date(pubDate).toLocaleDateString(i18n.language, options)}
+            {i18n.language &&
+              new Date(pubDate).toLocaleDateString(i18n.language, options)}
           </p>
         </div>
       </a>
