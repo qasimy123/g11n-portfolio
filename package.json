@@ -7,11 +7,10 @@
     "build": "next build",
     "start": "next start",
     "syncTranslations": "cd ./public/static/locales && dotenv -c .env.local locize sync --path ./public/static/locales",
-    "saveMissing": " cd ./public/static/locales && dotenv -c .env.local locize save-missing --path ./public/static/locales"
+    "saveMissing": " cd ./public/static/locales && dotenv -c .env.local locize save-missing --path ./public/static/locales",
+    "commit": "commit"
   },
   "dependencies": {
-    "@commitlint/cli": "^9.1.2",
-    "@commitlint/config-conventional": "^11.0.0",
     "dotenv-cli": "^4.0.0",
     "i18next": "^19.7.0",
     "locize-cli": "^7.6.6",
@@ -19,5 +18,10 @@
     "next-i18next": "^6.0.2",
     "react": "16.13.1",
     "react-dom": "16.13.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "@commitlint/prompt-cli": "^11.0.0"
   }
 }
