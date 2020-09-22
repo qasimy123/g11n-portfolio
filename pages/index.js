@@ -1,11 +1,10 @@
 import Head from "next/head";
 import { withTranslation } from "../src/services/i18n";
 import { Hero, About, Blogs, Projects, Menu } from "../src/components";
+import { extractLanguageRegion } from "../src/util";
 import theme from "../styles/theme";
 function Home({ t, MediumRssFeed, i18n }) {
-  const [language, region] = i18n.language
-    .split("-")
-    .map((item) => item.toLowerCase());
+  const [language, region] = extractLanguageRegion(i18n.language);
   const currTheme = theme[region];
   const dir = i18n.dir(language);
   return (
@@ -81,7 +80,7 @@ function Home({ t, MediumRssFeed, i18n }) {
           text-decoration: none;
           text-align: left;
           border-radius: 0.5em;
-          background: white;
+          background: ${currTheme.colors.white};
 
           color: ${currTheme.colors.secondaryColor};
         }

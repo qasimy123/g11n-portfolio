@@ -1,12 +1,10 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "../services/i18n";
 import theme from "../../styles/theme";
-
+import { extractLanguageRegion } from "../util";
 const LanguageChanger = () => {
   const { t, i18n } = useTranslation("Hero");
-  const [language, region] = i18n.language
-    .split("-")
-    .map((item) => item.toLowerCase());
+  const [language, region] = extractLanguageRegion(i18n.language);
   const currTheme = theme[region];
   const dir = i18n.dir(language);
   const [selectedLocale, setSelectedLocale] = useState();
@@ -60,7 +58,7 @@ const LanguageChanger = () => {
           font-size: 16px;
           font-family: sans-serif;
           font-weight: 700;
-          color: ${currTheme.colors.secondaryColor};
+          color: ${currTheme.colors.secondaryColor}
           line-height: 1.3;
           padding: 0.6em 1.4em 0.5em 0.8em;
           width: 100%;
@@ -70,10 +68,10 @@ const LanguageChanger = () => {
           border: none;
           border-radius: 0.5em;
           appearance: none;
-          background-color: #fff;
+          background-color: ${currTheme.colors.white};
         }
         .select-language:focus {
-          color: #222;
+          color: ${currTheme.colors.paper};
           outline: none;
         }
 
