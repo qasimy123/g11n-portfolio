@@ -212,9 +212,10 @@ export const ProjectsList = ({ projects }) => {
 export const BlogsList = ({ blogsList }) => {
   return (
     <div className={"grid"}>
-      {blogsList.map((blog) => (
-        <BlogCard blog={blog} />
-      ))}
+      {blogsList &&
+        blogsList.map((blog) =>
+          blog?.categories?.length ? <BlogCard blog={blog} /> : null
+        )}
     </div>
   );
 };
