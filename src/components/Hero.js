@@ -10,21 +10,8 @@ const Hero = ({ t }) => (
         width: 80%;
         padding: 1em;
       }
-
-      .title a {
-        color: #0070f3;
-        text-decoration: none;
-      }
-
-      .title a:hover,
-      .title a:focus,
-      .title a:active {
-        text-decoration: underline;
-      }
-
       .title {
         font-size: 5rem;
-        color: #fff;
         margin: 0;
         line-height: 1.15;
       }
