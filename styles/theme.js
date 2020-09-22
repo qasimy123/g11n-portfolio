@@ -11,6 +11,7 @@ const theme = {
       warning: "#fff3cd",
       paper: "#BD2020",
       success: "#d4edda",
+      white: "#fff",
     },
   },
   pk: {
@@ -25,6 +26,7 @@ const theme = {
       paper: "#65b891",
       warning: "#fff3cd",
       success: "#d4edda",
+      white: "#fff",
     },
   },
 };

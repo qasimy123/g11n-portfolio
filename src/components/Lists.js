@@ -1,5 +1,5 @@
 import { useTranslation } from "../services/i18n";
-
+import { extractLanguageRegion } from "../util";
 import theme from "../../styles/theme";
 export const List = ({ children }) => {
   return (
@@ -27,9 +27,7 @@ const ProjectCard = ({ project }) => {
   } = project;
 
   const { t, i18n } = useTranslation("Projects");
-  const [language, region] = i18n.language
-    .split("-")
-    .map((item) => item.toLowerCase());
+  const [language, region] = extractLanguageRegion(i18n.language);
   const currTheme = theme[region];
   const dir = i18n.dir(language);
   return (
@@ -139,7 +137,7 @@ const ProjectCard = ({ project }) => {
 };
 
 const BlogCard = ({ blog }) => {
-  const { title, pubDate, link, thumbnail, description, categories } = blog;
+  const { title, pubDate, link, thumbnail } = blog;
   const options = {
     weekday: "long",
     year: "numeric",
@@ -165,7 +163,6 @@ const BlogCard = ({ blog }) => {
         .blog-card {
           margin: 1em;
           display: flex;
-          background: white;
           flex-direction: column;
           padding: 1em;
           margin-top: 1em;

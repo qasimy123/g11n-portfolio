@@ -1,9 +1,10 @@
 import theme from "../../styles/theme";
 import { useTranslation } from "../services/i18n";
-
+import { extractLanguageRegion } from "../util";
 const Section = ({ children }) => {
   const { i18n } = useTranslation("Projects");
-  const currTheme = theme[i18n.language.split("-").slice(-1)[0].toLowerCase()];
+  const [language, region] = extractLanguageRegion(i18n.language);
+  const currTheme = theme[region];
   return (
     <>
       <div className={"section"}>{children}</div>
