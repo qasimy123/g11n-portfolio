@@ -10,6 +10,7 @@ const LanguageChanger = () => {
   const currTheme = theme[region];
   const dir = i18n.dir(language);
   const [selectedLocale, setSelectedLocale] = useState();
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     if (selectedLocale) {
@@ -18,33 +19,40 @@ const LanguageChanger = () => {
     setSelectedLocale(i18n.language);
   }, [selectedLocale]);
 
-  const changeLocale = (e) => {
-    i18n.changeLanguage(selectedLocale);
+  const changeLocale = async (val) => {
+    setLoading(true);
+    await i18n.changeLanguage(val);
+    setLoading(false);
   };
 
   return (
     <>
       <div className={"language-changer"}>
-        <select
-          dir={dir}
-          className="select-language"
-          value={selectedLocale}
-          onChange={(e) => {
-            setSelectedLocale(e.target.value);
-          }}
-          onClick={changeLocale}
-        >
-          <option value="en-CA">{t("locales.en_CA")}</option>
-          <option value="fr-CA">{t("locales.fr_CA")}</option>
-          <option value="en-PK">{t("locales.en_PK")}</option>
-          <option value="ur-PK">{t("locales.ur_PK")}</option>
-        </select>
+        {loading ? (
+          <p>{t("loading")}</p>
+        ) : (
+          <select
+            dir={dir}
+            className="select-language"
+            value={selectedLocale}
+            onChange={(e) => {
+              changeLocale(e.target.value);
+              setSelectedLocale(e.target.value);
+            }}
+          >
+            <option value="en-CA">{t("locales.en_CA")}</option>
+            <option value="fr-CA">{t("locales.fr_CA")}</option>
+            <option value="en-PK">{t("locales.en_PK")}</option>
+            <option value="ur-PK">{t("locales.ur_PK")}</option>
+          </select>
+        )}
       </div>
       <style jsx>{`
         .language-changer {
           display: flex;
           flex-direction: column;
           justify-content: center;
+          min-width: 50px;
         }
 
         .select-language {
