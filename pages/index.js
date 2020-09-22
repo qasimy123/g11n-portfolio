@@ -77,19 +77,22 @@ function Home({ t, MediumRssFeed, i18n }) {
         .card {
           flex-basis: 45%;
           padding: 1.5rem;
-          text-align: left;
           color: inherit;
           text-decoration: none;
-          
+          text-align: left;
           border-radius: 0.5em;
           background: white;
-          
+
           color: ${currTheme.colors.secondaryColor};
+        }
+
+        .card[dir="rtl"] {
+          text-align: right;
         }
 
         .card h3 {
           margin: 0 0 1rem 0;
-          font-size: 1.5rem;k
+          font-size: 1.5rem;
         }
 
         .card p {

@@ -18,6 +18,7 @@ const Section = ({ children }) => {
         @media screen and (max-width: 600px) {
           .section {
             text-align: center;
+            width: 100%;
           }
         }
       `}</style>

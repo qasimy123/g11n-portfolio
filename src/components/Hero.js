@@ -42,6 +42,9 @@ const Hero = ({ t }) => (
         .title {
           font-size: 4em;
         }
+        .hero {
+          width: 100%;
+        }
       }
     `}</style>
   </div>

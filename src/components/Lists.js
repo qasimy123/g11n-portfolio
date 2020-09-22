@@ -34,10 +34,12 @@ const ProjectCard = ({ project }) => {
   const dir = i18n.dir(language);
   return (
     <>
-      <div className={"card project-card "}>
+      <div dir={dir} className={"card project-card "}>
         <h3>{name}</h3>
         <div className={"project-card-content"}>
-          <img className={"project-preview"} src={preview_path} />
+          <a href={demo_url}>
+            <img dir={dir} className={"project-preview"} src={preview_path} />
+          </a>
           <div dir={dir} className={"project-card-text"}>
             <p>{description}</p>
             <ul className={"project-card-technologies"}>
@@ -63,6 +65,12 @@ const ProjectCard = ({ project }) => {
         .project-preview {
           border-radius: 0.5em;
           width: 640px;
+        }
+        .project-preview:hover {
+          box-shadow: -8px 10px 44px -21px ${currTheme.colors.paper};
+        }
+        .project-preview:hover[dir="rtl"] {
+          box-shadow: 8px 10px 44px -21px ${currTheme.colors.paper};
         }
         .project-card-technologies,
         .project-links {
@@ -106,10 +114,23 @@ const ProjectCard = ({ project }) => {
             margin-left: 0em;
             width: 100%;
           }
+          .project-card-text[dir="rtl"] {
+            margin-right: 0em;
+          }
         }
         @media screen and (max-width: 600px) {
           .project-card h3 {
             text-align: center;
+          }
+          .project-card {
+            padding: 1em;
+          }
+          .project-card-text p {
+            font-size: 1em;
+          }
+          .project-card-text li,
+          a {
+            font-size: 0.8em;
           }
         }
       `}</style>
@@ -149,6 +170,8 @@ const BlogCard = ({ blog }) => {
           padding: 1em;
           margin-top: 1em;
           width: fit-content;
+        }
+        .blog-card:hover {
           box-shadow: -8px 10px 44px -21px rgba(0, 0, 0, 0.59);
         }
         .blog-date {
