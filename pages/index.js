@@ -9,7 +9,7 @@ function Home({ t, MediumRssFeed, i18n }) {
   const dir = i18n.dir(language);
   return (
     <>
-      <div className={"container"}>
+      <div lang={language} dir={dir} className={"container"}>
         <Head>
           <title>{t("app_title")}</title>
           <link rel="icon" href="/favicon.ico" />
@@ -41,6 +41,7 @@ function Home({ t, MediumRssFeed, i18n }) {
           padding: 5rem 0;
           flex: 1;
           display: flex;
+          max-width: 1440px;
           flex-direction: column;
           justify-content: center;
           align-items: center;
