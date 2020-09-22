@@ -7,5 +7,6 @@
     "fr_CA": "French Canada",
     "ur_PK": "Urdu Pakistan"
   },
+  "loading": "Loading",
   "welcome_title": "Hello, my name is $t(common:first_name)!"
 }
