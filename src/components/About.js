@@ -2,10 +2,6 @@ import { withTranslation } from "../services/i18n";
 import Section from "./Section";
 import { extractLanguageRegion } from "../util";
 
-const BITMOJI_URLS = {
-  ca: `https://sdk.bitmoji.com/render/panel/8b80b4d8-32db-4668-8490-9b1227b0754b-3f3fdbec-d78d-441b-8530-a6c5f8c15014-v1.png?transparent=1&palette=1&width=620`,
-  pk: `https://sdk.bitmoji.com/render/panel/8b80b4d8-32db-4668-8490-9b1227b0754b-613405ba-1820-4dc0-8612-2835d2d2c74b-v1.png?transparent=1&palette=1&width=620`,
-};
 
 const About = ({ t, i18n }) => {
   const [language, region] = extractLanguageRegion(i18n.language);
@@ -14,8 +10,7 @@ const About = ({ t, i18n }) => {
     <>
       <Section>
         <h1>{t("about_title")}</h1>
-
-        <img dir={dir} className={"bitmoji"} src={BITMOJI_URLS[region]}></img>
+        <img dir={dir} className={"bitmoji"} src={`/static/bitmoji/${region}/hey.png`}></img>
         <p className={"about-paragraph"}>
           {t("about_paragraph")
             .split("\n")
