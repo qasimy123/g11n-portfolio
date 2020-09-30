@@ -1175,10 +1175,10 @@
   resolved "https://registry.yarnpkg.com/@fluent/syntax/-/syntax-0.15.0.tgz#4b05bc16e6d620a9b230f37cca269a4d56e35553"
   integrity sha512-NIObEPekXiaDDO10NQSOeylOETaI2Ns/ymKJNvgkM6FcBARS+t3NVGyLPPIl/pqHDUB9v7bWeEmuVMJQjnpNeg==
 
-"@js.properties/properties@0.5.3":
-  version "0.5.3"
-  resolved "https://registry.yarnpkg.com/@js.properties/properties/-/properties-0.5.3.tgz#72d486f87dc13883f52d314aeb82a0d8448ec880"
-  integrity sha512-xJldnR/FDRhI/C4/zFNooozJB77AeueT97un2AMGqQE4pCeifb02Eb0vWZ3Jp19CyUtwj8zXz/tnycgoeGoYVA==
+"@js.properties/properties@0.5.4":
+  version "0.5.4"
+  resolved "https://registry.yarnpkg.com/@js.properties/properties/-/properties-0.5.4.tgz#893c84fa6fcb8af66fdf4d6da2d435c10aa4cf09"
+  integrity sha512-4M/Mb2CxzuI1CtQhVFs6OC9ceuGPAP6SOWnpLcrdB1TcUHroXbsYDVJNOm32koRMfuCoRACbojcm4dPPcQxu0w==
 
 "@next/react-dev-overlay@9.5.3":
   version "9.5.3"
@@ -2257,10 +2257,10 @@ colors@1.4.0:
   resolved "https://registry.yarnpkg.com/colors/-/colors-1.4.0.tgz#c50491479d4c1bdaed2c9ced32cf7c7dc2360f78"
   integrity sha512-a+UqTh4kgZg/SlGvfbzDHpgRu7AAQOmmqRHJnxhRZICKFUT91brVhNNt58CMWU9PsBbv3PDCZUHbVxuDiH2mtA==
 
-commander@5.1.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/commander/-/commander-5.1.0.tgz#46abbd1652f8e059bddaef99bbdcb2ad9cf179ae"
-  integrity sha512-P0CysNDQ7rtVw4QIQtm+MRxV66vKFSvlsQvGYXZWR3qFU0jlMKHZZZgw8e+8DSah4UDKMqnknRDQz+xuQXQ/Zg==
+commander@6.1.0:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-6.1.0.tgz#f8d722b78103141006b66f4c7ba1e97315ba75bc"
+  integrity sha512-wl7PNrYWd2y5mp1OK/LhTlv8Ff4kQJQRXXAvF+uU/TPNiVJUxZLRYGj/B0y/lPGAVcSbJqH2Za/cvHmrPMC8mA==
 
 commander@^2.20.0:
   version "2.20.3"
@@ -4005,16 +4005,16 @@ locate-path@^6.0.0:
   dependencies:
     p-locate "^5.0.0"
 
-locize-cli@^7.6.6:
-  version "7.6.6"
-  resolved "https://registry.yarnpkg.com/locize-cli/-/locize-cli-7.6.6.tgz#1b5d6595346803e9524a02c5fbaaa4febd9eeb4d"
-  integrity sha512-3t7AhyXpwsM/xuXNjG/7c9taNuXaVkNhxJk3m7muP6PNjkHiymxK7bq6u9yq3hKvPNRyY6xxkStcdz3eieAjgA==
+locize-cli@^7.6.7:
+  version "7.6.7"
+  resolved "https://registry.yarnpkg.com/locize-cli/-/locize-cli-7.6.7.tgz#112b49424c1571b4d55f6d67afdc59477a884564"
+  integrity sha512-aCgXLbvm/B+/JoHTLxL8OUorNktX9r4uHnX9KG7dhAPofhNYO5A9Xe4vVN1/iGULMKEeB8FpWwvb2wlyAA8/eQ==
   dependencies:
-    "@js.properties/properties" "0.5.3"
+    "@js.properties/properties" "0.5.4"
     android-string-resource "2.3.4"
     async "3.2.0"
     colors "1.4.0"
-    commander "5.1.0"
+    commander "6.1.0"
     csvjson "5.1.0"
     diff "4.0.2"
     flat "5.0.2"
@@ -4025,13 +4025,13 @@ locize-cli@^7.6.6:
     laravelphp "2.0.3"
     lodash.clonedeep "4.5.0"
     mkdirp "1.0.4"
-    node-fetch "2.6.0"
+    node-fetch "2.6.1"
     resx "2.0.3"
     rimraf "3.0.2"
     strings-file "0.0.5"
     tmexchange "2.0.4"
-    xliff "5.2.0"
-    xlsx "0.16.6"
+    xliff "5.3.0"
+    xlsx "0.16.7"
 
 lodash._reinterpolate@^3.0.0:
   version "3.0.0"
@@ -4543,6 +4543,11 @@ node-fetch@2.6.0:
   version "2.6.0"
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.0.tgz#e633456386d4aa55863f676a7ab0daa8fdecb0fd"
   integrity sha512-8dG4H5ujfvFiqDmVu9fQ5bOHUC15JMjMY/Zumv26oOvvVJjM67KF8koCWIabKQ1GJIa9r2mMZscBq/TbdOcmNA==
+
+node-fetch@2.6.1:
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.1.tgz#045bd323631f76ed2e2b55573394416b639a0052"
+  integrity sha512-V4aYg89jEoVRxRb2fJdAg8FHvI7cEyYdVAh94HH0UIK8oJxUfkjlDQN9RbMx+bEjP7+ggMiFRprSti032Oipxw==
 
 node-html-parser@^1.2.19:
   version "1.2.20"
@@ -6427,17 +6432,17 @@ wrappy@1:
   resolved "https://registry.yarnpkg.com/wrappy/-/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
   integrity sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=
 
-xliff@5.2.0:
-  version "5.2.0"
-  resolved "https://registry.yarnpkg.com/xliff/-/xliff-5.2.0.tgz#519512284cb22983b541214a832942b9e50717d7"
-  integrity sha512-/ltf4KYKISgPmc8o5KOOgNPoFetInv7RaEy/8ib8hEYb6ZvZ1nMpUn56F0cevju3p9C6/3Hi2PW6WyY6HOxQsQ==
+xliff@5.3.0:
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/xliff/-/xliff-5.3.0.tgz#0e6701d024666fa454b7dd4c641294dd143360bf"
+  integrity sha512-8Ym61OUFygC12jMrfQL78K5iTUK4hAKpMsIEYU1mv3i4zN+cjnTaCaoKe0kHG69qQ6WsNZlhumhVhcfAZkfX7A==
   dependencies:
     xml-js "1.6.11"
 
-xlsx@0.16.6:
-  version "0.16.6"
-  resolved "https://registry.yarnpkg.com/xlsx/-/xlsx-0.16.6.tgz#ec759df166cbfe5fdf01d08636a6796db26af9a3"
-  integrity sha512-iAPNt15C2umCx7Q6h9owZvNHRYVOImLp7Mc00uA4UhJvzjfM1OV3V7TgBXIHuawGF1G6GLXZr/r75e5jsiBefg==
+xlsx@0.16.7:
+  version "0.16.7"
+  resolved "https://registry.yarnpkg.com/xlsx/-/xlsx-0.16.7.tgz#62fd6590addac7c4419daaaa2b0c5388015d5f69"
+  integrity sha512-Xc4NRjci2Grbh9NDk/XoaWycJurxEug1wwn0aJCmB0NvIMyQuHYq2muWLWGidYNZPf94aUbqm6K8Fbjd7gKTZg==
   dependencies:
     adler-32 "~1.2.0"
     cfb "^1.1.4"
