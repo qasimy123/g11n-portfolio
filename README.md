@@ -18,7 +18,7 @@ You can start editing the page by modifying `pages/index.js`. Or any component a
 
 Open `public/static/locales`
 
-# Rename .env.example to .env.local and replace the project id and api key
+### Rename .env.example to .env.local and replace the project id and api key
 ```
 LOCIZE_PROJECTID=ADD_PROJECT_ID
 LOCIZE_API_KEY=ADD_API_KEY
