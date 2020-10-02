@@ -1,14 +1,14 @@
 {
   "about_favourite_technologies": "Here are some tools and technologies I am interested in at the moment",
   "about_favourite_technologies_list": [
-    "ReactJS",
-    "NodeJS",
+    "React.js",
+    "Node.js",
     "GraphQL",
     "AWS",
     "Kubernetes",
     "TypeScript"
   ],
-  "about_paragraph": "My name is Qasim, and I am a second-year Computing Science student at the University of Alberta. \n\nWorking with various tools and technologies is my passion, and I've been honing my skills since 2017. I have experience working in high-paced environments and I am great at working under pressure. I pride myself on obsessing over the User Experience and going above and beyond to deliver the highest quality of work.\n\nI am also passionate about sharing my knowledge of computer science and software development. I've come to realize that explaining hard to understand concepts is the most effective way to measure my own understanding. In high school, I founded a lunchtime coding club to teach beginners how to create apps on the web. Currently, I am working on my Medium blog to share useful content on computer science and software development.\n\nCurrently at Intuit as a co-op Software Developer on the Globalization Team. This is the team that works on exciting new innovations and the scalable infrastructure to help enable Intuit to go global.",
+  "about_paragraph": "My name is Qasim, and I am a second-year Computing Science student at the University of Alberta. \n\nWorking with various tools and technologies is my passion, and I've been honing my skills since 2017. I have experience working in high-paced environments, and I thrive when working under pressure.\n\nI am also passionate about sharing knowledge on topics in computer science and software development. I've realized that explaining hard to understand concepts is the most effective way for me to learn. \n\nI am currently working on my Medium blog to document my journey of discovering exciting topics in computer science and software development. This site is a part of a demo for my article on the Globalization of software.\n\nOver the past year, I have also worked at Intuit as a co-op Software Developer on the Globalization Team. This team is the one that works on exciting new innovations and the scalable infrastructure to help enable Intuit to go global.",
   "about_title": "About",
   "anothet": "Test"
 }

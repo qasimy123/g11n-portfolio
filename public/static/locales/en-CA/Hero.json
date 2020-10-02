@@ -1,6 +1,6 @@
 {
-  "description": "I am a Computing Science student at the University of Alberta, and I love reading and writing about tech.",
-  "language_changer_button": "Change Region",
+  "description": "I am a Computing Science student at the University of Alberta.",
+  "language_changer_button": "Change Locale",
   "loading": "Loading",
   "locales": {
     "en_CA": "English Canada",
