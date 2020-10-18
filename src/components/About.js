@@ -2,7 +2,6 @@ import { withTranslation } from "../services/i18n";
 import Section from "./Section";
 import { extractLanguageRegion } from "../util";
 
-
 const About = ({ t, i18n }) => {
   const [language, region] = extractLanguageRegion(i18n.language);
   const dir = i18n.dir(language);
@@ -10,14 +9,20 @@ const About = ({ t, i18n }) => {
     <>
       <Section>
         <h1>{t("about_title")}</h1>
-        <img dir={dir} className={"bitmoji"} src={`/static/bitmoji/${region}/hey.png`}></img>
-        <p className={"about-paragraph"}>
-          {t("about_paragraph")
-            .split("\n")
-            .map((item, i) => {
-              return <p key={i}>{item}</p>;
-            })}
-        </p>
+
+        <div className={"about-pic-description"}>
+          <p className={"about-paragraph"}>
+            {t("about_paragraph")
+              .split("\n")
+              .map((item, i) => {
+                return <p key={i}>{item}</p>;
+              })}
+          </p>
+          <img
+            className={"about-photo"}
+            src={`/static/about/${region}.jpg`}
+          />
+        </div>
 
         <p>{t("about_favourite_technologies")}</p>
         <ul dir={dir} className={"favourite-technologies-list card"}>
@@ -34,21 +39,19 @@ const About = ({ t, i18n }) => {
             width: 60%;
             font-size: 1.3rem;
           }
-          .bitmoji {
-            width: 600px;
-            position: absolute;
-            top: 50%;
-            right: 0;
+          .about-photo {
+            width: 30%;
+            border-radius: 2em;
+          }
+          .about-pic-description {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: flex-start;
           }
           @media screen and (max-width: 1400px) {
             .about-paragraph {
               width: 80%;
-            }
-            .bitmoji {
-              width: 300px;
-              position: absolute;
-              top: 60%;
-              right: 0;
             }
           }
 
@@ -58,11 +61,15 @@ const About = ({ t, i18n }) => {
               width: 100%;
               text-align: center;
             }
+            .about-photo {
+              width: 50%;
+            }
+            .about-pic-description {
+              flex-direction: column;
+              align-items: center;
+            }
             .about-paragraph {
               font-size: 1rem;
-            }
-            .bitmoji {
-              display: none;
             }
             .favourite-technologies-list {
               list-style-type: none;
@@ -75,12 +82,6 @@ const About = ({ t, i18n }) => {
               text-align: center;
             }
           }
-
-          .bitmoji[dir="rtl"] {
-            left: 0;
-            transform: scaleX(-1);
-          }
-
           .favourite-technologies-list {
             width: fit-content;
           }
