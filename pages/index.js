@@ -1,12 +1,39 @@
 import Head from "next/head";
+import Lottie from "react-lottie";
+import { useState, useEffect } from "react";
 import { withTranslation } from "../src/services/i18n";
 import { Hero, About, Blogs, Projects, Menu } from "../src/components";
 import { extractLanguageRegion } from "../src/util";
 import theme from "../styles/theme";
+import caBackgroundAnimationData from "../src/lotties/ca.json";
+import pkBackgroundAnimationData from "../src/lotties/pk.json";
+
 function Home({ t, MediumRssFeed, i18n }) {
   const [language, region] = extractLanguageRegion(i18n.language);
   const currTheme = theme[region];
   const dir = i18n.dir(language);
+  const [animationData, setAnimationData] = useState(caBackgroundAnimationData);
+  const [animationOptions, setAnimationOptions] = useState(false);
+
+  useEffect(() => {
+    const opts = {
+      ca: caBackgroundAnimationData,
+      pk: pkBackgroundAnimationData,
+    };
+    setAnimationData(opts[region]);
+  }, [region]);
+  useEffect(() => {
+    const defaultOptions = {
+      loop: true,
+      autoplay: true,
+      animationData: animationData,
+      rendererSettings: {
+        preserveAspectRatio: "xMidYMid slice",
+      },
+    };
+
+    setAnimationOptions(defaultOptions);
+  }, [animationData]);
   return (
     <>
       <div lang={language} dir={dir} className={"container"}>
@@ -32,9 +59,19 @@ function Home({ t, MediumRssFeed, i18n }) {
           />
           <link rel="manifest" href="/site.webmanifest" />
         </Head>
-        <Menu />
-        <main className={"main"}>
+        <div className={"menu-hero"}>
+          <Menu />
           <Hero />
+          <div className={"background"}>
+            {animationOptions && (
+              <Lottie
+                options={animationOptions}
+                isClickToPauseDisabled={true}
+              />
+            )}
+          </div>
+        </div>
+        <main className={"main"}>
           <About />
           <Projects />
           <Blogs MediumRssFeed={MediumRssFeed} />
@@ -42,6 +79,12 @@ function Home({ t, MediumRssFeed, i18n }) {
 
         <footer className={"footer"}>
           <p>{t("footer_made_by")}</p>
+          <a href="https://www.vecteezy.com/free-vector/landscape">
+            Mountain Landscape Vector by Vecteezy
+          </a>
+          <a href="https://www.vecteezy.com/free-vector/rice-field">
+            Rice Field Vector by Vecteezy
+          </a>
         </footer>
       </div>
       <style jsx global>{`
@@ -54,7 +97,27 @@ function Home({ t, MediumRssFeed, i18n }) {
           align-items: center;
           background-color: ${currTheme.colors.background};
         }
-
+        .menu-hero {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          position: relative;
+        }
+        .background {
+          color: #999999;
+          position: absolute;
+          top: 0;
+          left: 0;
+          overflow: hidden;
+          width: 100%;
+          height: 100%;
+          ${region === "pk" &&
+          `
+          background-image:url("/static/pk_background.svg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          `};
+        }
         .main {
           padding: 5rem 0;
           flex: 1;
@@ -67,21 +130,24 @@ function Home({ t, MediumRssFeed, i18n }) {
 
         .footer {
           width: 100%;
-          height: 100px;
           background: ${currTheme.colors.secondaryColor};
           display: flex;
           justify-content: center;
           align-items: center;
+          flex-direction: column;
+          padding: 2em;
         }
 
         .footer img {
           margin-left: 0.5rem;
         }
 
-        .footer a {
+        .footer a,
+        .footer p {
           display: flex;
           justify-content: center;
           align-items: center;
+          color: ${currTheme.colors.primaryColor};
         }
         .grid {
           display: flex;
