@@ -8,7 +8,7 @@ const Section = ({ children }) => {
   return (
     <>
       <div className={"section"}>{children}</div>
-      <style jsx>{`
+      <style jsx global>{`
         .section {
           display: flex;
           flex-direction: column;
@@ -16,10 +16,30 @@ const Section = ({ children }) => {
           padding: 1em;
           color: ${currTheme.colors.text};
         }
+        .section h1 {
+          font-size: 3em;
+          position: relative;
+          overflow: hidden;
+        }
+
+        .section h1:after {
+          content: " ";
+          top: 50%;
+          width: 30%;
+          margin-left: 20px;
+          height: 7px;
+          position: absolute;
+          border-radius: 1em;
+          background: ${currTheme.colors.primaryColor};
+        }
+
         @media screen and (max-width: 600px) {
           .section {
             text-align: center;
             width: 100%;
+          }
+          .section h1:after {
+            display: none;
           }
         }
       `}</style>
