@@ -10,7 +10,11 @@ const Blogs = ({ t, MediumRssFeed, i18n }) => {
     <>
       <Section>
         <h1>{t("blogs_title")}</h1>
-        <img dir={dir} className={"bitmoji"} src={`/static/bitmoji/${region}/read.png`}></img>
+        <img
+          dir={dir}
+          className={"bitmoji"}
+          src={`/static/bitmoji/${region}/read.png`}
+        ></img>
         {MediumRssFeed && <BlogsList blogsList={MediumRssFeed.items} />}
       </Section>
       <style jsx>
