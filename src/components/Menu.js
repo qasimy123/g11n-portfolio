@@ -9,30 +9,37 @@ const Menu = ({}) => {
   const currTheme = theme[region];
   return (
     <>
-      <div className={"section"}>
-        <h1>{t("first_name")}</h1>
-        <ul className={"links"}>
-          {t("socials", { returnObjects: true }).map((social) => (
-            <a
-              target="_blank"
-              and
-              rel="noopener noreferrer"
-              href={social.url}
-              className={"underline"}
-            >
-              {social.site}
-            </a>
-          ))}
-        </ul>
+      <div className={"menu"}>
+        <div className={"logo-socials"}>
+          <h1>{t("first_name")}</h1>
+          <ul className={"links"}>
+            {t("socials", { returnObjects: true }).map((social) => (
+              <a
+                target="_blank"
+                and
+                rel="noopener noreferrer"
+                href={social.url}
+                className={"underline"}
+              >
+                {social.site}
+              </a>
+            ))}
+          </ul>
+        </div>
 
         <LanguageChanger />
       </div>
       <style jsx>{`
-        .section {
+        .menu {
           justify-content: space-between;
           display: flex;
           width: 100%;
-          padding: 2em;
+          padding: 3em;
+          z-index: 1;
+        }
+
+        .logo-socials {
+          display: flex;
         }
         .links {
           display: flex;
@@ -62,11 +69,15 @@ const Menu = ({}) => {
         }
 
         @media screen and (max-width: 600px) {
-          .section {
+          .menu {
             flex-direction: column;
             justify-content: center;
           }
-          .section h1 {
+          .logo-socials {
+            flex-direction: column;
+            justify-content: center;
+          }
+          .menu h1 {
             text-align: center;
           }
           .links {

@@ -1,40 +1,40 @@
 {
   "demo": "ڈیمو",
-  "github": "گیتوب",
+  "github": "Github",
   "projects_list": [
     {
-      "demo_url": "https://covidrace.news/",
-      "description": "کویوڈ - 19 ویکسین کی نشوونما کی پیشرفت پر نظر رکھنے کے لئے ویب ایپ کے لئے UI میں تعاون کیا۔",
-      "name": "کوویڈریس ایپ",
-      "preview_path": "/static/previews/covidraceapp.png",
+      "demo_url": "/https://covidrace.news",
+      "description": "Covid-19 کی ویکسین کی نشوونما کی پیشرفت پر نظر رکھنے کے لئے ایک ویب ایپ کے UI میں تعاون کیا۔",
+      "name": "CovidRace App",
+      "preview_path": "static/previews/covidraceapp.png/",
       "technologies_used": [
         "React.js (Next.js)",
-        "اسٹائلڈ جے ایس ایکس",
-        "نوڈ.جس"
+        "Styled JSX",
+        "Node.js"
       ]
     },
     {
-      "demo_url": "https://scavenger-hunt-53d39.firebaseapp.com/",
-      "description": "ٹیمیں بنانے کی صلاحیت کے ساتھ مکمل طور پر فوٹو اسکینجر ویب ایپ تیار کی۔\nاس کا اطلاق 100 کے قریب طلباء کے ساتھ کیا گیا ، جس میں ایپ کا استعمال کیا گیا اور بیک وقت فوٹو اپ لوڈ کیا گیا۔ ایپ نے ہر ٹیم کا اسکور ایک براہ راست تصویر والے فیڈ کے ساتھ لیڈر بورڈ پر دکھایا۔",
+      "demo_url": "/https://scavenger-hunt-53d39.firebaseapp.com",
+      "description": "ٹیمیں بنانے کی صلاحیت کے ساتھ مکمل طور پر ایک فوٹو اسکینجر ویب ایپ تیار کی۔\n\nاسے تقریباً 100 طلباء کے ساتھ ٹیسٹ بھی کیا گیا، جنہوں نے  بیک وقت ایپ کا استعمال کیا اور تصاویر اپ لوڈ کیں۔ اس ایپ نے ہر ٹیم کا اسکور ایک براہ راست تصویر والے فیڈ کے ساتھ لیڈر بورڈ پر دکھایا۔",
       "github_url": "https://github.com/qasimy123/scavengerhunt",
-      "name": "فوٹو اسکینجر ہنٹ ایپ",
-      "preview_path": "/static/previews/scavengerhunt.png",
+      "name": "Photo Scavenger Hunt App",
+      "preview_path": "static/previews/scavengerhunt.png/",
       "technologies_used": [
         "React.js",
-        "فائر بیس"
+        "Firebase"
       ]
     },
     {
       "demo_url": "https://qasimy123.github.io/react-game",
-      "description": "بدمعاش کی طرح کا کلہاڑی کرالر تیار کیا۔ میں نے میوزک اور تقریبا almost تمام پکسل آرٹ کو بھی تخلیق کیا۔",
+      "description": "ایک rogue کی مانند Dungeon Crawler تیار کیا۔ میں نے ہی اس کی موسیقی اور تقریباً سارا پکسل آرٹ بنایا ہے۔",
       "github_url": "https://github.com/qasimy123/react-game",
-      "name": "چوروں کی تہھانے",
-      "preview_path": "/static/previews/dungeoncrawler.png",
+      "name": "Dungeon of Thieves",
+      "preview_path": "/static/previews/dungeoncrawler.png/",
       "technologies_used": [
         "React.js",
-        "ریڈوکس"
+        "Redux"
       ]
     }
   ],
-  "projects_title": "Projects"
+  "projects_title": "پروجیکٹس"
 }

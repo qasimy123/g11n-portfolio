@@ -1,13 +1,14 @@
 {
   "about_favourite_technologies": "Voici quelques outils et technologies qui m'intéressent en ce moment",
   "about_favourite_technologies_list": [
-    "ReactJS",
-    "NodeJS",
+    "React.js",
+    "Node.js",
     "GraphQL",
     "AWS",
     "Kubernetes",
     "TypeScript"
   ],
-  "about_paragraph": "Je m'appelle Qasim et je suis étudiant de deuxième année en sciences informatiques à l'Université de l'Alberta.\n\nTravailler avec divers outils et technologies est ma passion et je perfectionne mes compétences depuis 2017. J'ai de l'expérience de travail dans des environnements dynamiques et je travaille très bien sous pression. Je suis fier d'être obsédé par l'expérience utilisateur et d'aller au-delà pour offrir la plus haute qualité de travail.\n\nJe suis également passionné par le partage de mes connaissances en informatique et en développement logiciel. Je me suis rendu compte qu'expliquer des concepts difficiles à comprendre est le moyen le plus efficace de mesurer ma propre compréhension. Au lycée, j'ai fondé un club de codage à l'heure du déjeuner pour enseigner aux débutants comment créer des applications sur le Web. Actuellement, je travaille sur mon blog Medium pour partager du contenu utile sur l'informatique et le développement de logiciels.\n\nActuellement chez Intuit en tant que développeur de logiciels coopératif au sein de l'équipe de mondialisation. Il s'agit de l'équipe qui travaille sur de nouvelles innovations passionnantes et sur l'infrastructure évolutive pour permettre à Intuit de se mondialiser.",
-  "about_title": "About"
+  "about_paragraph": "Je m'appelle Qasim et je suis un étudiant de deuxième année en informatique à l'Université de l'Alberta.\n\nTravailler avec divers outils et technologies est ma passion, et je perfectionne mes compétences depuis 2017. J'ai de l'expérience dans des environnements dynamiques et je m'épanouis lorsque je travaille sous pression.\n\nJe suis également passionné par le partage de connaissances sur des sujets en informatique et en développement de logiciels. J'ai réalisé qu'expliquer des concepts difficiles à comprendre est le moyen le plus efficace pour moi d'apprendre.\n\nJe travaille actuellement sur mon blog Medium pour documenter mon parcours de découverte de sujets passionnants en informatique et en développement de logiciels. Ce site fait partie d'une démo de mon article sur la mondialisation des logiciels.\n\nAu cours de la dernière année, j'ai également travaillé chez Intuit en tant que développeur de logiciels coopératif au sein de l'équipe de mondialisation. Cette équipe est celle qui travaille sur de nouvelles innovations passionnantes et l'infrastructure évolutive pour aider Intuit à se mondialiser.",
+  "about_title": "À propos de moi",
+  "anothet": "Tester"
 }

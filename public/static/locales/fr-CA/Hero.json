@@ -1,11 +1,12 @@
 {
-  "description": "Je suis étudiant en informatique à l'Université de l'Alberta et j'adore lire et écrire sur la technologie. Et j'aime construire avec des choses sympas ...",
-  "language_changer_button": "Changer de région",
+  "description": "Je suis étudiant en informatique à l'Université de l'Alberta.",
+  "language_changer_button": "Modifier les paramètres régionaux",
+  "loading": "Chargement",
   "locales": {
     "en_CA": "Canada anglais",
     "en_PK": "Pakistan anglais",
     "fr_CA": "Canada français",
     "ur_PK": "Ourdou Pakistan"
   },
-  "welcome_title": "Bonjour, mon nom est $t(common:first_name)!"
+  "welcome_title": "Bonjour, je m'appelle $t(common:first_name)!"
 }
