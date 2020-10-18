@@ -1,3 +1,40 @@
 {
+  "demo": "Demo",
+  "github": "Github",
+  "projects_list": [
+    {
+      "demo_url": "https://covidrace.news/",
+      "description": "Contributed to the UI for a web app to track the progress of the Covid-19 vaccine development.",
+      "name": "CovidRace App",
+      "preview_path": "/static/previews/covidraceapp.png",
+      "technologies_used": [
+        "React.js (Next.js)",
+        "Styled JSX",
+        "Node.js"
+      ]
+    },
+    {
+      "demo_url": "https://scavenger-hunt-53d39.firebaseapp.com/",
+      "description": "Fully developed a photo scavenger web app with the ability to create teams.\nIt was tested with around 100 students, using the app and uploading photos concurrently. The app showed each team’s score on a leader board with a live photo feed.",
+      "github_url": "https://github.com/qasimy123/scavengerhunt",
+      "name": "Photo Scavenger Hunt App",
+      "preview_path": "/static/previews/scavengerhunt.png",
+      "technologies_used": [
+        "React.js",
+        "Firebase"
+      ]
+    },
+    {
+      "demo_url": "https://qasimy123.github.io/react-game",
+      "description": "Developed a rogue-like Dungeon Crawler. I also created the music and almost all of the pixel art.",
+      "github_url": "https://github.com/qasimy123/react-game",
+      "name": "Dungeon of Thieves",
+      "preview_path": "/static/previews/dungeoncrawler.png",
+      "technologies_used": [
+        "React.js",
+        "Redux"
+      ]
+    }
+  ],
   "projects_title": "Projects"
 }

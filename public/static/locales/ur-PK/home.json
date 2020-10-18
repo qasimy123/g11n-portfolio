@@ -1,4 +1,4 @@
 {
-  "app_title": "Qasim's Global Portfolio",
-  "footer_made_by": "Made by Qasim"
+  "app_title": "$t(common:first_name) کا عالمی پورٹ فولیو",
+  "footer_made_by": "$t(common:first_name) نے بنایا"
 }

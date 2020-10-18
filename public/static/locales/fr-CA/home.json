@@ -1,4 +1,4 @@
 {
-  "app_title": "Qasim's Global Portfolio",
-  "footer_made_by": "Made by Qasim"
+  "app_title": "Portefeuille mondial de $t(common:first_name)",
+  "footer_made_by": "Faite par $t(common:first_name)"
 }

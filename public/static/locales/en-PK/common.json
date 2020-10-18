@@ -1,5 +1,19 @@
 {
   "first_name": "Qasim",
   "full_name": "$t(common:last_name) $t(common:first_name) ",
-  "last_name": "Khawaja"
+  "last_name": "Khawaja",
+  "socials": [
+    {
+      "site": "Linkedin",
+      "url": "https://pk.linkedin.com/in/qkhawaja"
+    },
+    {
+      "site": "Medium",
+      "url": "https://medium.com/@q.invisible"
+    },
+    {
+      "site": "GitHub",
+      "url": "https://github.com/qasimy123"
+    }
+  ]
 }
