@@ -80,10 +80,10 @@ function Home({ t, MediumRssFeed, i18n }) {
         <footer className={"footer"}>
           <p>{t("footer_made_by")}</p>
           <a href="https://www.vecteezy.com/free-vector/landscape">
-            Mountain Landscape Vector by Vecteezy
+            {t("mountain_landscape_vector")}
           </a>
           <a href="https://www.vecteezy.com/free-vector/rice-field">
-            Rice Field Vector by Vecteezy
+            {t("rice_field_vector")}
           </a>
         </footer>
       </div>

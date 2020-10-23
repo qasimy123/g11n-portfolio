@@ -1,4 +1,6 @@
 {
   "app_title": "Portefeuille mondial de $t(common:first_name)",
-  "footer_made_by": "Faite par $t(common:first_name)"
+  "footer_made_by": "Faite par $t(common:first_name)",
+  "mountain_landscape_vector": "Vecteur de paysage de montagne par Vecteezy",
+  "rice_field_vector": "Vecteur de champ de riz par Vecteezy"
 }
