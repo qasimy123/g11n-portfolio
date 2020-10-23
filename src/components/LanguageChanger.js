@@ -82,9 +82,12 @@ const LanguageChanger = () => {
         }
         .language-select-container {
           display:flex;
+          align-items: center;
         }
         .select-language {
-          display: block;
+          align-items: center;
+          display: flex;
+          height: 100%;
           font-size: 16px;
           font-family: sans-serif;
           font-weight: 700;

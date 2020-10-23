@@ -50,7 +50,7 @@ const Hero = ({ t, i18n }) => {
           background-image: url("${`/static/bitmoji/${region}/hey.png`}");
           height: 100%;
           background-repeat: no-repeat;
-          col
+          background-size: contain;
           display: block;
           box-sizing: border-box;
         }
@@ -59,8 +59,6 @@ const Hero = ({ t, i18n }) => {
         @media screen and (max-width: 1750px) {
           .bitmoji {
             width: 500px;
-            position: absolute;
-            top: 50%;
           }
         }
         @media screen and (max-width: 1500px) {

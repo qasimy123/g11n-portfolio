@@ -56,7 +56,7 @@ const ProjectCard = ({ project }) => {
                   <FontAwesomeIcon
                     width={15}
                     icon={faExternalLinkAlt}
-                    size={"xs"}
+                    size={"m"}
                   />
                   &nbsp;{t("demo")}
                 </a>
@@ -66,7 +66,7 @@ const ProjectCard = ({ project }) => {
                   <FontAwesomeIcon
                     width={15}
                     icon={faGithubSquare}
-                    size={"xs"}
+                    size={"lg"}
                   />
                   &nbsp;{t("github")}
                 </a>
@@ -129,12 +129,14 @@ const ProjectCard = ({ project }) => {
           display: flex;
           width: 100%;
           justify-content: flex-end;
+          align-items: center;
         }
 
         .project-links a {
           margin-left: 1em;
           display: flex;
-          height: fit-content;
+          height: 1.5em;
+          align-items: center;
           justify-content: space-between;
         }
 
