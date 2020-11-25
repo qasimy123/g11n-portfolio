@@ -200,7 +200,7 @@ function Home({ t, MediumRssFeed, i18n }) {
   );
 }
 Home.getInitialProps = async () => {
-  const username = "@q.invisible";
+  const username = "@qasim-khawaja";
   const rssFeedUrl = `https://medium.com/feed/${username}`;
   const rssToJsonApi = `https://api.rss2json.com/v1/api.json?rss_url=${rssFeedUrl}`;
   const res = await fetch(rssToJsonApi);
