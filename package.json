@@ -19,7 +19,7 @@
     "dotenv-cli": "^4.0.0",
     "i18next": "^19.8.2",
     "locize-cli": "^7.6.7",
-    "next": "9.5.4",
+    "next": "10.2.2",
     "next-i18next": "^6.0.3",
     "react": "16.13.1",
     "react-dom": "16.13.1",
