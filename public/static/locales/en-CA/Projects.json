@@ -3,6 +3,25 @@
   "github": "Github",
   "projects_list": [
     {
+      "demo_url": "https://www.notion.so/qasimk/Next-Trend-Links-a037bd6d3a524c689c0a17885c69678b",
+      "description": "Co-founded a SaaS company to empower a new generation of digital creatives with tools and information to engage their audiences.",
+      "name": "Next Trend | Keyword Research SaaS",
+      "preview_path": "/static/previews/nexttrend.png",
+      "technologies_used": [
+        "spaCy (NLP)",
+        "FastAPI",
+        "Python",
+        "PostgreSQL",
+        "Reddis",
+        "Algolia",
+        "Firestore",
+        "Vue.js",
+        "Node.js",
+        "Flutter",
+        "Docker"
+      ]
+    },
+    {
       "demo_url": "https://covidrace.news/",
       "description": "Contributed to the UI for a web app to track the progress of the Covid-19 vaccine development.",
       "name": "CovidRace App",
