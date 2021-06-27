@@ -100,6 +100,7 @@ const ProjectCard = ({ project }) => {
         }
         .project-card-technologies {
           list-style: none;
+          flex-wrap: wrap;
           display: flex;
           padding-left: 0px;
         }
